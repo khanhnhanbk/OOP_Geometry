@@ -1,7 +1,15 @@
 #include "CRectangle.h"
 #include "CSquare.h"
+#include "CTriangle.h"
 int main()
 {
+    cout << "input triangle" << endl;
+    CTriangle t;
+    t.input();
+    t.output();
+    cout << "Area: " << t.calculateArea() << endl;
+    cout << "Perimeter: " << t.calculatePerimeter() << endl;
+
     cout << "input rectangle: " << endl;
 
     CRectangle r1;
@@ -16,6 +24,6 @@ int main()
     s1.output();
     cout << "Area: " << s1.calculateArea() << endl;
     cout << "Perimeter: " << s1.calculatePerimeter() << endl;
-    
+
     return 0;
 }
